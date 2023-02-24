@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Main -->
+        <div class="w-screen h-screen flex justify-center items-center bg-[#344151]">
+            <!-- Content -->
+            <div class="flex flex-col justify-center items-center  gap-10">
+                <!-- Increment -->
+                <div class="font-medium text-xl text-[#0594cb]">Increment And Decrement</div>
+                <!-- Counter -->
+                <div class="flex gap-8 bg-white">
+                    <!-- minus wala button -->
+                    <div class=" "> <button class="p-4 border-r-2 " onclick="decrement()"> <i class="fa-solid fa-minus"></i></div>
+                    </button>
+
+                    <!-- Number -->
+                    <div id="counter" class="font-bold p-4">0</div>
+                    <!-- Plus wala button -->
+                    <div>
+                       <button class="p-4 border-l-2" onclick="increment()">
+                        <i class="fa-solid fa-plus"></i>
+                       </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
